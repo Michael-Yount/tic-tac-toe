@@ -47,7 +47,20 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.503);
 }
 .container {
   padding-top: 50px;
+}
+
+.grid-row {
+  border: 6px solid #739dc7;
+  border-radius: 6px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 4em;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(175, 70, 70);
 }
