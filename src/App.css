@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+.game-board {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #34495e;
+  color: rgb(204, 28, 28);
+  border: 6px solid #0b0d0f;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+.container {
+  padding-top: 50px;
+}
