@@ -5,8 +5,10 @@ import Square from './Square';
 const Board = () => {
     const [player, setPlayer] = useState(1);
     const [mounted, setMounted] = useState(true);
+    const [random, setRandom] = useState(0);
     let status = `Player ${player}`;
     const toggle = () => setMounted(!mounted);
+    const reRender = () => setRandom(Math.random());
     function renderSquare(i) {
         return <Square id={i}player={player}></Square>
     }
@@ -21,6 +23,8 @@ const Board = () => {
                 </div>
                 <div id='info'>
                     <button onClick={toggle}>Show/Hide Row</button>
+                    <button onClick={reRender}>Re-render</button>
+
                     <h1>{status}</h1>
                 </div>
             </div>
