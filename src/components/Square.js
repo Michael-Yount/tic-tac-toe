@@ -9,10 +9,7 @@ const Square = ({id, player, newState }) => {
     const getRandomColor = () =>
         palette[Math.floor(Math.random() * 2)];
 
-        useEffect (() => {
-            console.log(`Render ${id}`);
-            return ()=> console.log(`unmounting Square ${id}`);
-        });
+      
    // keep track of the square 
     return (
         //change color of square onClick

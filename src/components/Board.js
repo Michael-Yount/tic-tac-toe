@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Square from './Square';
 
 function checkWinner(gameState) {
@@ -37,7 +37,14 @@ const Board = () => {
         setPlayer(nextPlayer);
         setState(state); // state array ie 0 or 1
         return thePlayer;
-    };
+    }
+
+    function resetClicked () {
+        console.log('clicked')
+        setState([]);
+    }
+    
+
     function renderSquare(i) {
         return <Square id={i}player={player} newState={newState}></Square>
     }
@@ -63,6 +70,9 @@ const Board = () => {
         <div id='info'>
         <h1>{status}</h1>
         </div>
+        </div>
+        <div>
+            <button className='reset' onClick={resetClicked}>Reset Game</button>
         </div>
         </div>
         </>
