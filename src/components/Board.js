@@ -28,7 +28,7 @@ const Board = () => {
     let status = `Player ${player}`;
     let winner = checkWinner(state);
     if(winner != null) status = `Player ${winner} wins`;
-
+    
     // define newState function
     const newState = idOfSquare => {
         let thePlayer = player;
@@ -36,37 +36,37 @@ const Board = () => {
         let nextPlayer = (player + 1) % 2;
         setPlayer(nextPlayer);
         setState(state); // state array ie 0 or 1
-        console.log(`adding state ${JSON.stringify(state)}`);
         return thePlayer;
     };
     function renderSquare(i) {
         return <Square id={i}player={player} newState={newState}></Square>
     }
     return (
-    <> 
+        <> 
         <div className='container'>
-            <div className='game-board'>
-                <div className='grid-row'>
-                {renderSquare(0)}
-                {renderSquare(1)}
-                {renderSquare(2)}
-                </div>
-                <div className='grid-row'>
-                {renderSquare(3)}
-                {renderSquare(4)}
-                {renderSquare(5)}
-                </div>
-                <div className='grid-row'>
-                {renderSquare(6)}
-                {renderSquare(7)}
-                {renderSquare(8)}
-                </div>
-                <div id='info'>
-                    <h1>{status}</h1>
-                </div>
-            </div>
+        <div className='game-board'>
+        <div className='grid-row'>
+        {renderSquare(0)}
+        {renderSquare(1)}
+        {renderSquare(2)}
         </div>
-    </>
-    )
-}
+        <div className='grid-row'>
+        {renderSquare(3)}
+        {renderSquare(4)}
+        {renderSquare(5)}
+        </div>
+        <div className='grid-row'>
+        {renderSquare(6)}
+        {renderSquare(7)}
+        {renderSquare(8)}
+        </div>
+        <div id='info'>
+        <h1>{status}</h1>
+        </div>
+        </div>
+        </div>
+        </>
+        )
+    }
+  
 export default Board;

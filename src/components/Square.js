@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 
 const Square = ({id, player, newState }) => {
-    const [color, setColor] = useState('pink');
+    const [color, setColor] = useState();
     const [status, setStatus] = useState(null);
     const XorO = ["O", "X"];
 
-    const palette = ['green', 'blue'];
+    const palette = ['#FDFAE2', '#FDEDE2'];
     const getRandomColor = () =>
         palette[Math.floor(Math.random() * 2)];
 
@@ -20,12 +20,12 @@ const Square = ({id, player, newState }) => {
             //alert(`I am square ${id}`)
             let col = getRandomColor();
             setColor(col);
-            let nextPlayer = newState({ id:id, color:col });
+            let nextPlayer = newState(id);
             setStatus(nextPlayer);
             e.target.style.background = col;
         }}>
             <h1>{XorO[status]}</h1></button>
     )
 }
-
+  
 export default Square;
