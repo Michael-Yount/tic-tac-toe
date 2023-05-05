@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const Square = ({id, player, newState }) => {
-    const [color, setColor] = useState();
+    const [color, setColor] = useState('pink');
     const [status, setStatus] = useState(null);
     const XorO = ["O", "X"];
 

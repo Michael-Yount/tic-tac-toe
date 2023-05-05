@@ -4,7 +4,7 @@ import Board from './components/Board';
 const App = () => {
   return (
     <div className="App">
-      <h1>React Tic-Tac-Toe</h1>
+      <h1 className='title'>React Tic-Tac-Toe</h1>
       <Board/>
     </div>
   );

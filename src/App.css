@@ -1,4 +1,7 @@
-
+body{
+  background-color: #c2d0dd;
+  text-align: center;
+}
 .game-board {
   width: 600px;
   height: 600px;
@@ -30,4 +33,9 @@
   border: 2px solid rgb(104, 104, 236);
   border-radius: 10px;
   font-size: 1.2em;
+}
+
+.title {
+  font-size: 3em;
+  text-shadow: .3em .3em .3em rgba(0, 0, 0, 0.58);
 }
