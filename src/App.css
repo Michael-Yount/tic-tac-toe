@@ -1,3 +1,6 @@
+body {
+  background-color: #6f7378;
+}
 
 .App{
   background-color: #fafdff;
@@ -16,7 +19,7 @@
   text-align: center;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr;
-  box-shadow: .5em .5em .5em rgba(0, 0, 0, 0.503);
+  box-shadow: .5em .5em 1em rgba(0, 0, 0, 0.724);
 }
 .status {
   padding: 20px;
@@ -46,7 +49,7 @@
 }
 
 .title {
-  width: 13em;
+  width: 10em;
   padding: 1em;
   margin: 0 auto;
   margin-top: 1em;
@@ -58,6 +61,7 @@
   background-image: linear-gradient(to right, rgba(0, 55, 255, 0.277) , rgba(1, 255, 56, 0.202));
   text-align: center;
   text-shadow: .3em .3em .3em rgba(0, 0, 0, 0.58);
+  box-shadow: .3em .3em .3em rgba(0, 0, 0, 0.546);
 }
 
 .reset {
