@@ -8,9 +8,10 @@
 
 #### Reset button (currently working on the functionality)
 
-#### Button animations, for hover and click.
+#### Button animations, for hover and click. (hover animation complete, )
 
 #### Background art and effects.
 
-#### Make the app responsive for phones and other devices.
+#### Make the app responsive for phones and other devices. (complete)
+
 ![Tic tac toe](https://user-images.githubusercontent.com/11709807/236590394-92a2b5ce-bfb2-42bb-891b-c59bfb0ef19c.png)
