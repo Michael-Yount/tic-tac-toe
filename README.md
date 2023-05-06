@@ -4,7 +4,9 @@
 
 ## This is the link to the playable site...https://michael-yount.github.io/tic-tac-toe/
 
-### Future features: 
+### Future features:
+
+#### Change players from O , 1 to player 1 and player 2 (changed)
 
 #### Reset button (currently working on the functionality)
 
