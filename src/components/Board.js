@@ -23,7 +23,7 @@ function checkWinner(gameState) {
 
 
 const Board = () => {
-    const [player, setPlayer] = useState(1);
+    const [player, setPlayer] = useState(0);
     const [state, setState] = useState([]);
     let status = `Player ${player + 1}`;
     let winner = checkWinner(state);
@@ -39,9 +39,11 @@ const Board = () => {
         return thePlayer;
     }
 
-    function resetClicked () {
-        console.log('clicked')
-        setState(state.fill(null));
+    const resetClicked = () => {
+        setState([]);
+        newState([]);
+
+
     }
     
 
