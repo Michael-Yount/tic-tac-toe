@@ -2,7 +2,7 @@
 
 ## You can run this game by clicking the link, it is ported to github pages!
 
-## This is the link to the playable site...(coming soon)
+## This is the link to the playable site...https://michael-yount.github.io/tic-tac-toe/
 
 ### Future features: 
 
