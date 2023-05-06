@@ -7,7 +7,7 @@ const App = () => {
     <div className='gameContainer'>
 
     <div className="App">
-      <h1 className='title'>React Tic-Tac-Toe</h1>
+      <h1 className='title'>Tic-Tac-Toe</h1>
       <Board/>
     </div>
 
