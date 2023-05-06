@@ -25,7 +25,7 @@ function checkWinner(gameState) {
 const Board = () => {
     const [player, setPlayer] = useState(1);
     const [state, setState] = useState([]);
-    let status = `Player ${player}`;
+    let status = `Player ${player + 1}`;
     let winner = checkWinner(state);
     if(winner != null) status = `Player ${winner} wins`;
     
@@ -33,7 +33,7 @@ const Board = () => {
     const newState = idOfSquare => {
         let thePlayer = player;
         state[idOfSquare] = player; // present player
-        let nextPlayer = (player + 1) % 2;
+        let nextPlayer =  ((player + 1) % 2);
         setPlayer(nextPlayer);
         setState(state); // state array ie 0 or 1
         return thePlayer;
@@ -41,7 +41,7 @@ const Board = () => {
 
     function resetClicked () {
         console.log('clicked')
-        setState([]);
+        setState(state.fill(null));
     }
     
 
@@ -51,30 +51,30 @@ const Board = () => {
     return (
         <> 
         <div className='container'>
-        <div className='game-board'>
-        <div className='grid-row'>
-        {renderSquare(0)}
-        {renderSquare(1)}
-        {renderSquare(2)}
+          <div className='game-board'>
+            <div className='grid-row'>
+                {renderSquare(0)}
+                {renderSquare(1)}
+                {renderSquare(2)}
+            </div>
+            <div className='grid-row'>
+                {renderSquare(3)}
+                {renderSquare(4)}
+                {renderSquare(5)}
+            </div>
+            <div className='grid-row'>
+                {renderSquare(6)}
+                {renderSquare(7)}
+                {renderSquare(8)}
+            </div>
+            <div id='info'>
+                <h1 className='status'>{status}</h1>
+            </div>
+            <div>
+                <button className='reset' onClick={resetClicked}>Reset Game</button>
+            </div>
         </div>
-        <div className='grid-row'>
-        {renderSquare(3)}
-        {renderSquare(4)}
-        {renderSquare(5)}
-        </div>
-        <div className='grid-row'>
-        {renderSquare(6)}
-        {renderSquare(7)}
-        {renderSquare(8)}
-        </div>
-        <div id='info'>
-        <h1>{status}</h1>
-        </div>
-        </div>
-        <div>
-            <button className='reset' onClick={resetClicked}>Reset Game</button>
-        </div>
-        </div>
+    </div>
         </>
         )
     }

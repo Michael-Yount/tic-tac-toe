@@ -1,21 +1,28 @@
-body{
-  background-color: #c2d0dd;
-  text-align: center;
+
+.App{
+  background-color: #fafdff;
+  margin: 0;
+  padding: 0;
 }
 .game-board {
-  width: 600px;
-  height: 600px;
+  width: 20em;
+  height: 35em;
   margin: 0 auto;
-  background-color: #1f3347;
-  color: rgb(213, 255, 205);
+  background-color: #a9bfd4;
+  color: rgb(72, 75, 71);
   border: 3px solid #0b0d0f;
   border-radius: 10px;
   display: grid;
+  text-align: center;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr;
-  box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.503);
+  box-shadow: .5em .5em .5em rgba(0, 0, 0, 0.503);
+}
+.status {
+  padding: 20px;
 }
 .container {
+  align-items: center;
   padding-top: 20px;
 }
 
@@ -23,29 +30,44 @@ body{
   border-radius: 6px;
   font-family: Helvetica;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.5em;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: rgb(48, 19, 19);
 }
-.btn {
-  border: 2px solid rgb(48, 48, 250);
+.square {
+  border: 2px solid rgb(149, 149, 199);
   border-radius: 10px;
   font-size: 1em;
+  background-color: #1f3347;
+} 
+.square:hover {
+  transform: scale(1.1);
 }
 
 .title {
-  font-size: 3em;
+  width: 13em;
+  padding: 1em;
+  margin: 0 auto;
+  margin-top: 1em;
+  color: aliceblue;
+  border: 2px solid rgb(2, 2, 152);
+  border-radius: 10px;
+  font-size: 2em;
+  background-color: #6f7378;
+  background-image: linear-gradient(to right, rgba(0, 55, 255, 0.277) , rgba(1, 255, 56, 0.202));
+  text-align: center;
   text-shadow: .3em .3em .3em rgba(0, 0, 0, 0.58);
 }
-.footer {
-  padding: 30px;
-  margin: 30px;
-  color: #1f3347;
-  background-color: #336ba3;
+
+.reset {
+  padding: 10px;
+  margin: 20px;
+  font-size: 1.5;
   border-radius: 10px;
-  width: 600px;
-  display: grid;
-  
+  background-color: #b5ff9e;
+}
+
+.gameContainer {
+  background-color: #0f73d0;
 }
