@@ -16,4 +16,5 @@
 
 #### Make the app responsive for phones and other devices. (complete)
 
-![Tic tac toe](https://user-images.githubusercontent.com/11709807/236590394-92a2b5ce-bfb2-42bb-891b-c59bfb0ef19c.png)
+
+![tictactwix](https://user-images.githubusercontent.com/11709807/236647382-eaf6f443-35cc-41f8-a92a-66d2a4745df7.png)
