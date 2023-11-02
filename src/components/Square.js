@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const Square = ({id, player, newState }) => {
     const [color, setColor] = useState();
@@ -15,11 +15,11 @@ const Square = ({id, player, newState }) => {
         //change color of square onClick
         <button className="square" onClick={(e) => {
             //alert(`I am square ${id}`)
-            let col = getRandomColor();
-            setColor(col);
+            let color = getRandomColor();
+            setColor(color);
             let nextPlayer = newState(id);
             setStatus(nextPlayer);
-            e.target.style.background = col;
+            e.target.style.background = color;
         }}>
             <h1>{XorO[status]}</h1></button>
     )
