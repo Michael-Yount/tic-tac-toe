@@ -40,9 +40,10 @@ const Board = () => {
     }
 
     const resetClicked = () => {
-
-    setState([]);
+       
         console.log('clicked');
+        setState(state);    
+
     }
     
 
